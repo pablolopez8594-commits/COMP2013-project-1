@@ -9,7 +9,7 @@ const parsePrice = (currentNumber) => Number(currentNumber.replace("$", "")); //
 
 export default function GroceriesAppContainer() {
   const [selectedQty, setSelectedQty] = useState(
-    products.map((p) => ({ id: p.id, qty: 0 })) //this is an suestate that will change depending of the
+    products.map((product) => ({ id: product.id, qty: 0 })) //this is an suestate that will change depending of the
     //users input
   );
   //we make the dinamic cart that will be usefull later
@@ -42,13 +42,13 @@ export default function GroceriesAppContainer() {
       //                    
       selectedQty.map(
         (//                                    \|/ this right here is the one making sure of that
-          row                       /////////   v
+          product                   /////////   v
         ) => {//                                v
           //                                    v   this right here is the one making sure of that
-          if (row.id === productID && row.qty > 0) {
-            return { ...row, qty: row.qty - 1 };
+ if (product.id === productID && product.qty > 0) {
+            return { ...product, qty: product.qty - 1 };
           } else {
-            return row;
+            return product;
           }
         }
       )

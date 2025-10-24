@@ -8,8 +8,9 @@
 }
 
 .NavBar {
-  background-color: rgb(76, 43, 226);
+  background-image: url("https://i.pinimg.com/736x/2a/92/ef/2a92ef56f0c414db306a91a48df62ae5.jpg");
   display: flex;
+  color: black;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
@@ -59,6 +60,9 @@
 }
 
 .CartCard {
+  color: black;
+  font-size: large;
+  font-weight: bolder;
   display: flex;
   /* flex-direction: column; */
   justify-content: space-around;
@@ -68,7 +72,7 @@
   border-radius: 10px;
   margin: 10px;
   padding: 5px;
-  background-color: rgb(43, 48, 54);
+  background-image: url("https://i.pinimg.com/736x/2a/92/ef/2a92ef56f0c414db306a91a48df62ae5.jpg");
 }
 
 .CartCardInfo {
@@ -131,11 +135,15 @@ img {
 }
 
 .counter-button {
-  width: 15px;
-  height: 15px;
+  width: 25px;
+  height: 25px;
   border: 1px solid white;
-  border-radius: 50%;
+  border-radius: 10%;
   cursor: pointer;
+  display: flex;             
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;  
 }
 
 .CartListBtns {

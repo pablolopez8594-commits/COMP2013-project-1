@@ -259,7 +259,7 @@ export default function GroceriesAppContainer() {
       <NavBar username="Pablo" /> {/*this just passes the username value for the navBar*/}
 
       <div className="GroceriesApp-Container">
-        {/* ⭐ NUEVO: PANEL DEL FORM */}
+       
         <div className="ProductFormPanel">
           <ProductForm
             formData={formData}

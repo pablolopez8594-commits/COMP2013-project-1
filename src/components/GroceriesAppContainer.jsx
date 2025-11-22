@@ -266,7 +266,7 @@ export default function GroceriesAppContainer() {
             changeItem={handleFormChange}     // new
             submitValues={handleFormSubmit}   // new
           />
-          <p style={{ color: "green" }}>{postResponse?.message}</p>
+          <p>{postResponse?.message}</p>
         </div>
 
         <ProductsContainer

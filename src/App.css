@@ -159,3 +159,11 @@ img {
   background-color: green;
   width: 50%;
 }
+
+.ProductForm {
+  width: 260px;     
+  display: flex;
+  flex-direction: column;       
+  gap: 0.6rem;
+  margin: 0 auto; 
+}
